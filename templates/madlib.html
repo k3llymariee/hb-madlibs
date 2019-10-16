@@ -2,8 +2,15 @@
 <html>
 <head>
     <title>MADLIBBIN'</title>
+    {% extends 'base.html' %}
 </head>
 <body>
-There once was a {{ color }} {{ noun }} sitting in the Hackbright Lab. When {{ person }} went to pick it up, it burst into flames in a totally {{ adjective }} way! 
+{% block content %}
+There once was a {{ color }} {{ noun }} {{ verb }} in the Hackbright Lab. When {{ person }} went to pick it up, it burst into flames in a totally {{ adjective }} way!
+<br><br>
+{% if surprise %}
+    <img src="https://media.giphy.com/media/s2qXK8wAvkHTO/giphy.gif">
+{% endif %}
+{% endblock %}
 </body>
 </html>

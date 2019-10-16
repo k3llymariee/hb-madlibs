@@ -1,27 +1,35 @@
-input {
-    color: blue;
+html {
+    font-family: Lato, Helvetica, sans-serif;
 }
+
 p {
     color: green;
-}
-
-textarea:focus, input:focus {
-    color: purple;
-}
-
-html {
-    font-family: "Gill Sans", sans-serif;
-}
-
-.radioselect {
-    color: pink;
+    font-weight: bold;
 }
 
 p.outer {
-    color: orange;
+    color: #5e6cea;  /*blue*/
+    font-weight: bold;
+}
+
+input {
+    color: #bbb04b;  /*green*/
+    font-weight: bold;
+}
+
+.radioselect {
+    color: #ee7e89; /*salmon pink*/
+    font-weight: bold;
 }
 
 p.inner {
-    color: sienna;
+    color: #ea965e;  /*sherbert orange*/
     font-weight: bold;
+    font-style: italic;
+}
+
+footer {
+    color: grey;
+    font-weight: lighter;
+    font-size: 85%;
 }

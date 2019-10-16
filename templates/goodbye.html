@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+    {% extends 'base.html' %}
     <title>Goodbye</title>
 </head>
 <body>
-So long, sucker.
+{% block content %}
+So long, sucker. 
+<br><br>
+<img src="https://media.giphy.com/media/11QJgcchgwskq4/giphy.gif">
+{% endblock %}
 </body>
 </html>

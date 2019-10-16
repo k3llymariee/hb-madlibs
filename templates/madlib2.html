@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MADLIBBIN'</title>
+    {% extends 'base.html' %}
+</head>
+<body>
+{% block content %}
+{{ person }} went to the beach wearing a {{ color }} {{ noun }} {{ verb }} on the boardwalk in a totally {{ adjective }} way!
+<br><br>
+{% if surprise %}
+    <img src="https://media.giphy.com/media/l46CkATpdyLwLI7vi/giphy.gif">
+{% endif %}
+{% endblock %}
+</body>
+</html>

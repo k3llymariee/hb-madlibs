@@ -2,15 +2,17 @@
 <html>
 <head>
   <title>A Compliment</title>
-  <link rel="stylesheet" href="/static/madlibs.css">
+  {% extends 'base.html' %}
 </head>
 <body>
+    {% block content %}
     <p class="outer">Hi {{ person }}! I think you're {{ compliment }}!</p>
     <form action="/game">
         <p class="inner">Do you want to play a game?</p>
         <input type="radio" name="play_game" value="Yes"><span class="radioselect">Yes</span>
-        <input type="radio" name="play_game" value="No"><span class="radioselect">No</span><br>
+        <input type="radio" name="play_game" value="No"><span class="radioselect">No</span><br><br>
         <input type="submit">
     </form>
+    {% endblock %}
 </body>
 </html>

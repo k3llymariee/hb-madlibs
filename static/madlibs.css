@@ -1,0 +1,27 @@
+input {
+    color: blue;
+}
+p {
+    color: green;
+}
+
+textarea:focus, input:focus {
+    color: purple;
+}
+
+html {
+    font-family: "Gill Sans", sans-serif;
+}
+
+.radioselect {
+    color: pink;
+}
+
+p.outer {
+    color: orange;
+}
+
+p.inner {
+    color: sienna;
+    font-weight: bold;
+}

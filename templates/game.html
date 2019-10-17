@@ -3,7 +3,6 @@
 <head>
     {% extends 'base.html' %}
     <title>Game</title>
-    }
 </head>
 <body>
     {% block content %}
@@ -17,9 +16,15 @@
         <option value="sitting">Sitting</option>
         <option value="roller skating">Roller Skating</option>
         <option value="floating">Floating</option>
-        </select><br><br>
+        </select><br>
+    Favorite Animals:<br>
+    <input type="checkbox" name="animals" value="dog">Dog
+    <input type="checkbox" name="animals" value="cat">Cat
+    <input type="checkbox" name="animals" value="chinchilla">Chinchilla
+    <input type="checkbox" name="animals" value="otter">Otter
+    <input type="checkbox" name="animals" value="platypus">Platypus<br><br>
     Surpise Me <br><input type="checkbox" name="surprise" value="checked">Yes please<br><br>
-    <input type="submit">
+    <input type="submit" class="button">
 </form>
 {% endblock %}
 </body>

@@ -6,12 +6,18 @@
 </head>
 <body>
     {% block content %}
-    <p class="outer">Hi {{ person }}! I think you're {{ compliment }}!</p>
+    <p class="outer">Hi {{ person }}! We think you're:
+    {% for compliment in compliments %}
+    <ul>
+        <li> {{ compliment }}</li>
+    </ul>
+    {% endfor %}
+    </p>
     <form action="/game">
         <p class="inner">Do you want to play a game?</p>
         <input type="radio" name="play_game" value="Yes"><span class="radioselect">Yes</span>
         <input type="radio" name="play_game" value="No"><span class="radioselect">No</span><br><br>
-        <input type="submit">
+        <input type="submit" class="button">
     </form>
     {% endblock %}
 </body>

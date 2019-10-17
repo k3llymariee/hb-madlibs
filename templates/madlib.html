@@ -8,6 +8,23 @@
 {% block content %}
 There once was a {{ color }} {{ noun }} {{ verb }} in the Hackbright Lab. When {{ person }} went to pick it up, it burst into flames in a totally {{ adjective }} way!
 <br><br>
+{% if animals|length == 1 %}
+    {{ animal }}
+{% else %}
+    {% for animal in animals %}
+        {% if loop.last %}
+            and {{ animal }}.
+        {% elif loop.index != loop.length %}
+            {{ animal }}, 
+        {% endif %}
+    {% endfor %}
+
+{% endif %}
+<br><br>
+<!-- if there is only 1 item = return that item -->
+<!-- 3+ items: include commas after each word except for last word; last word: no comma + put and before it -->
+
+
 {% if surprise %}
     <img src="https://media.giphy.com/media/s2qXK8wAvkHTO/giphy.gif">
 {% endif %}

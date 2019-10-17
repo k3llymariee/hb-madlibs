@@ -12,11 +12,6 @@ p.outer {
     font-weight: bold;
 }
 
-input {
-    color: #bbb04b;  /*green*/
-    font-weight: bold;
-}
-
 .radioselect {
     color: #ee7e89; /*salmon pink*/
     font-weight: bold;
@@ -32,4 +27,12 @@ footer {
     color: grey;
     font-weight: lighter;
     font-size: 85%;
+}
+
+.button {
+    background-color: #bbb04b;
+    border: black;
+    color: #5e6cea;
+    font-weight: bold;
+    border-width: 2px;
 }
